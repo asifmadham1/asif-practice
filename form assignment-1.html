@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+label {
+ display: block;
+ margin-top: 10px;
+}
+</style>
+</head>
+<body>
+
+<h2>User Registration Form</h2>
+
+<form action="/submit_registration" method="post">
+ <label for="fname">First Name:</label>
+ <input type="text" id="fname" name="fname"><br>
+  
+ <label for="lname">Last Name:</label>
+ <input type="text" id="lname" name="lname"><br>
+  
+ <label for="pwd">Password:</label>
+ <input type="password" id="pwd" name="pwd"><br>
+  
+ <label for="bio">Bio:</label>
+ <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br>
+  
+ <label for="gender">Gender:</label>
+ <select id="gender" name="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+ </select><br>
+  
+ <label for="interests">Interests:</label><br>
+ <input type="checkbox" id="music" name="music" value="Music">
+ <label for="music">Music</label><br>
+ <input type="checkbox" id="sports" name="sports" value="Sports">
+ <label for="sports">Sports</label><br>
+ <input type="checkbox" id="reading" name="reading" value="Reading">
+ <label for="reading">Reading</label><br>
+  
+ <label for="country">Country:</label>
+ <select id="country" name="country">
+    <option value="usa">United States</option>
+    <option value="can">Canada</option>
+    <option value="oth">Other</option>
+ </select><br>
+  
+ <label for="colors">Preferred Colors:</label><br>
+ <input type="checkbox" id="red" name="colors" value="Red">
+ <label for="red">Red</label><br>
+ <input type="checkbox" id="blue" name="colors" value="Blue">
+ <label for="blue">Blue</label><br>
+ <input type="checkbox" id="green" name="colors" value="Green">
+ <label for="green">Green</label><br>
+  
+ <label for="pic">Profile Picture:</label>
+ <input type="file" id="pic" name="pic"><br>
+  
+ <label for="bday">Birthdate:</label>
+ <input type="date" id="bday" name="bday"><br>
+  
+ <label for="email">Email:</label>
+ <input type="email" id="email" name="email"><br>
+  
+ <label for="website">Website:</label>
+ <input type="url" id="website" name="website"><br>
+  
+ <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
